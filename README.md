@@ -17,4 +17,4 @@ Template repository for general-purpose Rust projects.
 - `cargo fmt --all -- --check`
 - `cargo check --tests --benches`
 - `cargo clippy --all-targets --all-features -- -D warnings`
-- `cargo test`
+- `cargo nextest run`

@@ -9,7 +9,7 @@
 - `cargo fmt --all -- --check`
 - `cargo check --tests --benches`
 - `cargo clippy --all-targets --all-features -- -D warnings`
-- `cargo test`
+- `cargo nextest run`
 
 ## Workflow Rules
 - Protect `main` with required CI checks.
