@@ -3,7 +3,8 @@
 Template repository for general-purpose Rust projects.
 
 ## Included
-- CI workflow with fmt/check/clippy/test (`.github/workflows/ci.yml`)
+- CI workflow with fmt/check/clippy/nextest and dependency checks (`.github/workflows/ci.yml`)
+- GitHub Actions security workflow with actionlint and Zizmor (`.github/workflows/workflow-security.yml`)
 - Release workflow for version tags (`.github/workflows/release.yml`)
 - Codex cleanup workflow (`.github/workflows/codex-cleanup.yml`)
 
@@ -18,3 +19,9 @@ Template repository for general-purpose Rust projects.
 - `cargo check --tests --benches`
 - `cargo clippy --all-targets --all-features -- -D warnings`
 - `cargo nextest run`
+- `cargo audit`
+- `cargo deny check advisories bans sources`
+- `cargo machete`
+
+Before publishing a derived project, choose and declare its license. License
+enforcement is intentionally not enabled by the template's `cargo-deny` policy.
